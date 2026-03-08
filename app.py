@@ -39,7 +39,7 @@ def load_all():
     tokenizer = AutoTokenizer.from_pretrained(LLM_NAME)
     model = AutoModelForCausalLM.from_pretrained(
         LLM_NAME,
-        torch_dtype=torch.float32,
+        torch_dtype=torch.float16,
         device_map="cpu",
         low_cpu_mem_usage=True,
     )

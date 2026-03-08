@@ -35,7 +35,7 @@ def load_all():
         allow_dangerous_deserialization=True,
     )
 
-    LLM_NAME = "Qwen/Qwen2.5-1.5B-Instruct"
+    LLM_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
     tokenizer = AutoTokenizer.from_pretrained(LLM_NAME)
     model = AutoModelForCausalLM.from_pretrained(
         LLM_NAME,
